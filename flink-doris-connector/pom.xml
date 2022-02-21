@@ -27,7 +27,7 @@ under the License.
     </parent>
     <groupId>org.apache.doris</groupId>
     <artifactId>doris-flink-connector</artifactId>
-    <version>${flink.version}-${scala.version}-1.0.0-SNAPSHOT</version>
+    <version>1.13.5-2.12-1.0.0-SNAPSHOT</version>
     <name>Doris Flink Connector</name>
     <url>https://doris.apache.org/</url>
     <licenses>
@@ -62,8 +62,8 @@ under the License.
         </mailingList>
     </mailingLists>
     <properties>
-        <scala.version>${env.scala.version}</scala.version>
-        <flink.version>${env.flink.version}</flink.version>
+        <scala.version>2.12</scala.version>
+        <flink.version>1.13.5</flink.version>
         <libthrift.version>0.13.0</libthrift.version>
         <arrow.version>5.0.0</arrow.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -146,38 +146,38 @@ under the License.
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-java</artifactId>
-            <version>${flink.version}</version>
+            <version>1.13.5</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-streaming-java_${scala.version}</artifactId>
-            <version>${flink.version}</version>
+            <artifactId>flink-streaming-java_2.12</artifactId>
+            <version>1.13.5</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-clients_${scala.version}</artifactId>
-            <version>${flink.version}</version>
+            <artifactId>flink-clients_2.12</artifactId>
+            <version>1.13.5</version>
             <scope>provided</scope>
         </dependency>
         <!--    flink table -->
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-table-common</artifactId>
-            <version>${flink.version}</version>
+            <version>1.13.5</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-table-api-java-bridge_${scala.version}</artifactId>
-            <version>${flink.version}</version>
+            <artifactId>flink-table-api-java-bridge_2.12</artifactId>
+            <version>1.13.5</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-table-planner-blink_${scala.version}</artifactId>
-            <version>${flink.version}</version>
+            <artifactId>flink-table-planner-blink_2.12</artifactId>
+            <version>1.13.5</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -236,7 +236,7 @@ under the License.
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
-            <artifactId>mockito-scala_${scala.version}</artifactId>
+            <artifactId>mockito-scala_2.12</artifactId>
             <version>1.4.7</version>
             <exclusions>
                 <exclusion>
